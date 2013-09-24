@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Jungle Club Music Group - Music</title>
+        <link rel="stylesheet" type="text/css" href="reset.css"/>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <link rel="stylesheet" href="css/mosaic.css" type="text/css" media="screen" />
+        
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+        <script type="text/javascript" src="http://connect.soundcloud.com/sdk.js"></script>
+        <script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
+        <script>
+            SC.initialize({
+                client_id: '08c508a5807a708e7385f1017ee257b4'
+            });
+
+            var playlist_url = 'http://soundcloud.com/b-rich-entertainment/sets/test';
+            SC.oEmbed(playlist_url, { auto_play: true }, function(oEmbed) {
+                console.log('oEmbed response: ' + oEmbed);
+            });
+        </script>
+    </head>
+    <body>
+    	<header id="headerImg">
+    		<a href="index.html"><img src="img/jungleclub-graphic.png" /></a>
+    	</header>
+            <a href="music.html" ><h1 class="headers current">Music</h1></a>
+            <a href="videos.html" ><h1 class="headers">Videos</h1></a>
+            <a href="pics.php" ><h1 class="headers">Pictures</h1></a>
+            <a href-"jungleclub.tumblr.com" ><h1 class="headers">Blog</h1></a>
+            <iframe scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F7615402&amp;color=000000&amp;auto_play=false&amp;show_artwork=true"></iframe>
+        <footer><h6>Jungle Club Music Group 2013</h6></footer>
+    </body>
+</html>
